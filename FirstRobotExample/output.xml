@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20201013 13:47:50.489" rpa="false">
+<suite id="s1" name="FirstRobotExample" source="C:\Users\Shakti\git\RobotProject_WebGui\FirstRobotExample">
+<suite id="s1-s1" name="Test" source="C:\Users\Shakti\git\RobotProject_WebGui\FirstRobotExample\Test">
+<suite id="s1-s1-s1" name="TestSuite1" source="C:\Users\Shakti\git\RobotProject_WebGui\FirstRobotExample\Test\TestSuite1.robot">
+<test id="s1-s1-s1-t1" name="FirstTest">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Hello equensWorldliner!!</arg>
+</arguments>
+<msg timestamp="20201013 13:47:50.722" level="INFO">Hello equensWorldliner!!</msg>
+<status status="PASS" starttime="20201013 13:47:50.721" endtime="20201013 13:47:50.722"></status>
+</kw>
+<status status="PASS" starttime="20201013 13:47:50.720" endtime="20201013 13:47:50.722" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t2" name="FirstSeleniumTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://login.yahoo.com/</arg>
+<arg>firefox</arg>
+</arguments>
+<msg timestamp="20201013 13:47:50.724" level="INFO">Opening browser 'firefox' to base url 'https://login.yahoo.com/'.</msg>
+<msg timestamp="20201013 13:47:50.725" level="INFO">Firefox driver log is always forced to to: C:\Users\Shakti\git\RobotProject_WebGui\FirstRobotExample\geckodriver-5.log</msg>
+<status status="PASS" starttime="20201013 13:47:50.723" endtime="20201013 13:48:01.360"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20201013 13:48:01.361" endtime="20201013 13:48:01.517"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201013 13:48:01.518" endtime="20201013 13:48:01.690"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=username</arg>
+<arg>shakti2689@yahoo.com</arg>
+</arguments>
+<msg timestamp="20201013 13:48:01.696" level="INFO">Typing text 'shakti2689@yahoo.com' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20201013 13:48:01.695" endtime="20201013 13:48:02.165"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>name=signin</arg>
+</arguments>
+<msg timestamp="20201013 13:48:02.166" level="INFO">Clicking button 'name=signin'.</msg>
+<status status="PASS" starttime="20201013 13:48:02.166" endtime="20201013 13:48:02.421"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=password</arg>
+<arg>*************</arg>
+</arguments>
+<msg timestamp="20201013 13:48:02.422" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg timestamp="20201013 13:48:03.144" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20201013 13:48:03.170" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20201013 13:48:02.421" endtime="20201013 13:48:03.170"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>name=verifyPassword</arg>
+</arguments>
+<msg timestamp="20201013 13:48:03.171" level="INFO">Clicking button 'name=verifyPassword'.</msg>
+<status status="PASS" starttime="20201013 13:48:03.170" endtime="20201013 13:48:04.668"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20201013 13:48:04.669" endtime="20201013 13:48:04.685"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@class='Bgr(nr) Bgz(34px) Bdrs(45%) H(34px) Pos(a) Start(1px) T(2px) W(34px)']</arg>
+</arguments>
+<msg timestamp="20201013 13:48:04.686" level="INFO">Clicking button 'xpath://div[@class='Bgr(nr) Bgz(34px) Bdrs(45%) H(34px) Pos(a) Start(1px) T(2px) W(34px)']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20201013 13:48:10.086" level="FAIL">NoSuchWindowException: Message: Browsing context has been discarded
+</msg>
+<status status="FAIL" starttime="20201013 13:48:10.066" endtime="20201013 13:48:10.087"></status>
+</kw>
+<msg timestamp="20201013 13:48:10.087" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: Browsing context has been discarded
+</msg>
+<msg timestamp="20201013 13:48:10.096" level="FAIL">WebDriverException: Message: Failed to interpret value as array
+</msg>
+<status status="FAIL" starttime="20201013 13:48:04.685" endtime="20201013 13:48:10.096"></status>
+</kw>
+<status status="FAIL" starttime="20201013 13:47:50.723" endtime="20201013 13:48:10.097" critical="yes">WebDriverException: Message: Failed to interpret value as array
+</status>
+</test>
+<test id="s1-s1-s1-t3" name="SecondTest">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is second test case</arg>
+</arguments>
+<msg timestamp="20201013 13:48:10.100" level="INFO">This is second test case</msg>
+<status status="PASS" starttime="20201013 13:48:10.100" endtime="20201013 13:48:10.101"></status>
+</kw>
+<status status="PASS" starttime="20201013 13:48:10.098" endtime="20201013 13:48:10.101" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t4" name="ThirdTests">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is third test cases</arg>
+</arguments>
+<msg timestamp="20201013 13:48:10.105" level="INFO">This is third test cases</msg>
+<status status="PASS" starttime="20201013 13:48:10.104" endtime="20201013 13:48:10.105"></status>
+</kw>
+<status status="PASS" starttime="20201013 13:48:10.103" endtime="20201013 13:48:10.106" critical="yes"></status>
+</test>
+<status status="FAIL" starttime="20201013 13:47:50.550" endtime="20201013 13:48:10.109"></status>
+</suite>
+<status status="FAIL" starttime="20201013 13:47:50.546" endtime="20201013 13:48:10.114"></status>
+</suite>
+<status status="FAIL" starttime="20201013 13:47:50.521" endtime="20201013 13:48:10.118"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1">Critical Tests</stat>
+<stat pass="3" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="1" id="s1" name="FirstRobotExample">FirstRobotExample</stat>
+<stat pass="3" fail="1" id="s1-s1" name="Test">FirstRobotExample.Test</stat>
+<stat pass="3" fail="1" id="s1-s1-s1" name="TestSuite1">FirstRobotExample.Test.TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20201013 13:48:10.087" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: Browsing context has been discarded
+</msg>
+</errors>
+</robot>
